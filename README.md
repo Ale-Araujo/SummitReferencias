@@ -9,7 +9,7 @@
 [![Site](https://img.shields.io/badge/site-alvesalii.github.io%2FSummitReferencias-3e2865?style=for-the-badge)](https://alvesalii.github.io/SummitReferencias/)
 [![Notebook](https://img.shields.io/badge/notebook-Google%20Colab-963eaf?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/11jlHW2HZg95QQr3NLWuY5VtJ-yvYTK2Y?usp=sharing)
 
-<img src="qr-summit-referencias.png" alt="QR code para a página de links do projeto" width="220">
+<a href="https://alvesalii.github.io/SummitReferencias/"><img src="https://api.qrserver.com/v1/create-qr-code/?size=440x440&margin=12&color=3e2865&bgcolor=ffffff&data=https%3A%2F%2Falvesalii.github.io%2FSummitReferencias%2F" alt="QR code para a página de links do projeto" width="220"></a>
 
 Escaneie o QR code ou acesse **[alvesalii.github.io/SummitReferencias](https://alvesalii.github.io/SummitReferencias/)**
 para abrir o notebook e as referências do estudo.
@@ -70,5 +70,4 @@ Neste trabalho, investigamos esse erro como cientistas de dados forenses: limpam
 | Arquivo | Conteúdo |
 |---|---|
 | `index.html` | Página de links publicada no GitHub Pages |
-| `qr-summit-referencias.png` | QR code que abre a página (usado no pôster) |
 | `README.md` | Esta descrição |
