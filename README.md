@@ -70,4 +70,3 @@ Neste trabalho, investigamos esse erro como cientistas de dados forenses: limpam
 | Arquivo | Conteúdo |
 |---|---|
 | `index.html` | Página de links publicada no GitHub Pages |
-| `README.md` | Esta descrição |
