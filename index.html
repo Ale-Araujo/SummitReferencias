@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Links do pôster do 4º UMC Summit: notebook no Google Colab e referências.">
+<title>Literary Digest 1936</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,600;7..72,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column, sized for a phone held after scanning a QR at a poster session */
+:root {
+  --bg: #f7f4fa;
+  --surface: #ffffff;
+  --ink: #221a2e;
+  --muted: #625875;
+  --line: #e3dbec;
+  --accent: #3e2865;
+  --accent-2: #963eaf;
+  --chip: #efe6f5;
+  --display: "Literata", Georgia, "Times New Roman", serif;
+  --body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17121f; --surface: #221a2e; --ink: #f1ecf7; --muted: #b3a8c4;
+    --line: #362b47; --accent: #cdb4f0; --accent-2: #e08ef5; --chip: #2e2340;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17121f; --surface: #221a2e; --ink: #f1ecf7; --muted: #b3a8c4;
+  --line: #362b47; --accent: #cdb4f0; --accent-2: #e08ef5; --chip: #2e2340;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body);
+  font-size: 16px; line-height: 1.5;
+}
+.wrap {
+  max-width: 520px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 40px;
+  display: flex; flex-direction: column; gap: 28px;
+}
+header { display: flex; flex-direction: column; gap: 10px; }
+.event {
+  align-self: flex-start; font-size: 12px; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--accent-2); background: var(--chip);
+  padding: 4px 10px; border-radius: 999px;
+}
+h1 {
+  font-family: var(--display); font-weight: 700; font-size: clamp(24px, 6.5vw, 30px);
+  line-height: 1.2; margin: 0; color: var(--accent); text-wrap: balance;
+}
+.authors { margin: 0; color: var(--muted); font-size: 14px; }
+.stat {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  border-top: 1px solid var(--line); padding-top: 12px; font-size: 14px; color: var(--muted);
+}
+.stat b { font-family: var(--mono); font-weight: 500; font-size: 18px; color: var(--ink); font-variant-numeric: tabular-nums; }
+section { display: flex; flex-direction: column; gap: 10px; }
+h2 {
+  margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted);
+}
+.links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.link {
+  display: flex; align-items: center; gap: 14px; min-width: 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 16px; color: inherit; text-decoration: none;
+  transition: border-color .15s, transform .15s;
+}
+a.link:hover { border-color: var(--accent-2); transform: translateY(-1px); }
+a.link:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; }
+.tag {
+  flex: none; width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center;
+  background: var(--chip); color: var(--accent); font-family: var(--mono); font-size: 12px; font-weight: 500;
+}
+.primary .tag { background: var(--accent); color: var(--surface); }
+.txt { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.txt strong { font-weight: 600; font-size: 15px; }
+.txt span { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.go { margin-left: auto; color: var(--accent-2); font-size: 18px; flex: none; }
+.pending { border-style: dashed; opacity: .75; }
+.pending .go { color: var(--muted); font-size: 12px; }
+footer { font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+@media (prefers-reduced-motion: reduce) { .link { transition: none; } a.link:hover { transform: none; } }
+</style>
+</head>
+<body>
+
+<main class="wrap">
+  <header>
+    <span class="event">4º UMC Summit · Pesquisa, Inovação e Extensão</span>
+    <h1>Análise Forense e Correção Preditiva do Erro Estatístico da Eleição Norte-Americana de 1936</h1>
+    <p class="authors">Alexandre Araújo, Alison Alves, Antonio Saurin e Isabelli Reno · Orientador: Prof. Fabiano Bezerra Menegidio · Universidade de Mogi das Cruzes</p>
+    <div class="stat"><b>18,7 → 3,4 p.p.</b> erro médio por estado, enquete × modelo corrigido</div>
+  </header>
+
+  <section aria-labelledby="h-codigo">
+    <h2 id="h-codigo">Código</h2>
+    <ul class="links" id="list-codigo"></ul>
+  </section>
+
+  <section aria-labelledby="h-refs">
+    <h2 id="h-refs">Referências</h2>
+    <ul class="links" id="list-refs"></ul>
+  </section>
+
+  <section aria-labelledby="h-fontes">
+    <h2 id="h-fontes">Fontes dos resultados oficiais</h2>
+    <ul class="links" id="list-fontes"></ul>
+  </section>
+
+  <footer>Python · Pandas · NumPy · Scikit-Learn · Google Colab</footer>
+</main>
+
+<script>
+// Para atualizar um link, edite apenas o campo "url" abaixo. url vazio = aparece como "em breve".
+const LINKS = {
+  "list-codigo": [
+    { tag: "ipynb", title: "Notebook no Google Colab", sub: "Limpeza, diagnóstico de viés e Regressão Linear", url: "https://colab.research.google.com/drive/11jlHW2HZg95QQr3NLWuY5VtJ-yvYTK2Y?usp=sharing", primary: true }
+  ],
+  "list-refs": [
+    { tag: "1988", title: "Squire, P. Why the 1936 Literary Digest poll failed", sub: "Public Opinion Quarterly, 52(1), 125–133", url: "https://doi.org/10.1086/269085" },
+    { tag: "2017", title: "Lohr, S. L.; Brick, J. M. Roosevelt predicted to win", sub: "Statistics, Politics and Policy, 8(1), 65–84", url: "https://doi.org/10.1515/spp-2016-0006" }
+  ],
+  "list-fontes": [
+    { tag: "1936", title: "Eleição presidencial dos EUA de 1936", sub: "Wikipedia · resultados por estado", url: "https://en.wikipedia.org/wiki/1936_United_States_presidential_election" },
+    { tag: "1932", title: "Eleição presidencial dos EUA de 1932", sub: "Wikipedia · âncora histórica do modelo", url: "https://en.wikipedia.org/wiki/1932_United_States_presidential_election" }
+  ]
+};
+for (const [id, items] of Object.entries(LINKS)) {
+  const ul = document.getElementById(id);
+  for (const it of items) {
+    const li = document.createElement("li");
+    const el = document.createElement(it.url ? "a" : "div");
+    el.className = "link" + (it.primary ? " primary" : "") + (it.url ? "" : " pending");
+    if (it.url) { el.href = it.url; el.target = "_blank"; el.rel = "noopener"; }
+    el.innerHTML = `<span class="tag"></span><span class="txt"><strong></strong><span></span></span><span class="go"></span>`;
+    el.querySelector(".tag").textContent = it.tag;
+    el.querySelector("strong").textContent = it.title;
+    el.querySelector(".txt span").textContent = it.sub;
+    el.querySelector(".go").textContent = it.url ? "↗" : "em breve";
+    li.appendChild(el); ul.appendChild(li);
+  }
+}
+</script>
+
+</body>
+</html>
