@@ -38,17 +38,16 @@ Neste trabalho, investigamos esse erro como cientistas de dados forenses: limpam
 
 | Métrica | Enquete original | Modelo corrigido |
 |---|:---:|:---:|
-| Erro médio por estado (MAE) | 18,7 p.p. | **3,4 p.p.** |
+| Erro médio por estado (MAE) | 18,7 %. | **3,4 %.** |
 | Estados com o vencedor correto | 18 de 48 | **47 de 48** |
 | Votos eleitorais atribuídos ao vencedor correto | 170 | **526** |
 
 - A correlação entre o viés da amostra em 1932 e o erro da enquete em 1936 foi de **r = −0,90**: o erro era sistemático e, por isso, corrigível.
-- *p.p.* = pontos percentuais, a diferença entre o percentual previsto e o real.
 
 ## Conclusões
 
 - **Volume não é representatividade:** milhões de respostas não evitaram o erro, porque a amostra era enviesada.
-- **Uma âncora confiável corrige o viés:** o resultado real de 1932 reduziu o erro médio de 18,7 para 3,4 p.p.
+- **Uma âncora confiável corrige o viés:** o resultado real de 1932 reduziu o erro médio de 18,7 para 3,4 %.
 - **IA responsável começa pelos dados:** dados enviesados geram modelos enviesados; auditar quem está na amostra é o primeiro passo.
 
 ## Autores
